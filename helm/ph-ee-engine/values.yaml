@@ -99,7 +99,7 @@ camunda-platform:
 
     resources:
       requests:
-        cpu: 100m
+        cpu: 500m
 
   zeebe-gateway:
     replicas: 1

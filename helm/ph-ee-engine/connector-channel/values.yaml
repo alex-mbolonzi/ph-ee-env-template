@@ -43,11 +43,11 @@ server:
     keyPassword: "<replace-with-password>"
     keyStorePassword: "<replace-with-password>"
 limits:
+  cpu: "1000m"
+  memory: "1024M"
+requests:
   cpu: "500m"
   memory: "512M"
-requests:
-  cpu: "100m"
-  memory: "256M"
 livenessProbe:
   httpGet:
     path: /actuator/health/liveness

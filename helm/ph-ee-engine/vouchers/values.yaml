@@ -46,10 +46,10 @@ mock_schema:
   hostname: "http://ph-ee-connector-mock-payment-schema:8080"
 
 limits:
-  cpu: "500m"
-  memory: "512M"
+  cpu: "1000m"
+  memory: "1024M"
 requests:
-  cpu: "100m"
+  cpu: "500m"
   memory: "512M"
 
 # Enabling this will publicly expose your Elasticsearch instance.

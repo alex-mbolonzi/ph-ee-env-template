@@ -18,11 +18,11 @@ SPRING_PROFILES_ACTIVE: "bb"
 api:
   channel: "http://ph-ee-connector-channel"
 limits:
+  cpu: "1000m"
+  memory: "1024M"
+requests:
   cpu: "500m"
   memory: "512M"
-requests:
-  cpu: "100m"
-  memory: "256M"
 deployment:
   apiVersion: "apps/v1"
   annotations:

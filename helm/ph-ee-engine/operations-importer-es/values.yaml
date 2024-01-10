@@ -60,8 +60,8 @@ reporting:
     transferSettlementFailed: false
     transferResponseCREATE: false
 limits:
+  cpu: "1000m"
+  memory: "1024M"
+requests:
   cpu: "500m"
   memory: "512M"
-requests:
-  cpu: "100m"
-  memory: "256M"

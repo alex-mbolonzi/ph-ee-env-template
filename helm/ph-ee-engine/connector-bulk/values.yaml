@@ -50,11 +50,11 @@ aws:
   access_key: "<access key>" 
   secret_key: "<secret key>"  
 limits:
+  cpu: "1000m"
+  memory: "1024M"
+requests:
   cpu: "500m"
   memory: "512M"
-requests:
-  cpu: "100m"
-  memory: "256M"
 # Enabling this will publicly expose your Elasticsearch instance.
 # Only enable this if you have security enabled on your cluster  
 ingress:

@@ -28,11 +28,11 @@ switch:
   oracle:
     host: "http://moja-simulator.sandbox.mifos.io"
 limits:
-  cpu: "500m"
-  memory: "512M"
+  cpu: "1000m"
+  memory: "1024M"
 requests:
-  cpu: "100m"
-  memory: "256M"   
+  cpu: "500m"
+  memory: "512M"   
 # Enabling this will publicly expose your Elasticsearch instance.
 # Only enable this if you have security enabled on your cluster
 ingress:

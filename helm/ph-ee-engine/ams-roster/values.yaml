@@ -20,11 +20,11 @@ ams:
 pesacore:
   auth_header: "PaymentHub"
 limits:
+  cpu: "1000m"
+  memory: "1024M"
+requests:
   cpu: "500m"
   memory: "512M"
-requests:
-  cpu: "100m"
-  memory: "256M"
 deployment:
   apiVersion: "apps/v1"
   annotations:

@@ -45,11 +45,11 @@ aws:
   access_key: "<access key>" 
   secret_key: "<secret key>"  
 limits:
+  cpu: "1000m"
+  memory: "1024M"
+requests:
   cpu: "500m"
   memory: "512M"
-requests:
-  cpu: "100m"
-  memory: "256M"
 wildcardhostname: bulk-connector-closedloop.sandbox.mifos.io
 ingress:
   apiversion: networking.k8s.io/v1

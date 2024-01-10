@@ -93,7 +93,7 @@ elasticsearch:
   # Allocate smaller chunks of memory per pod.
   resources:
     requests:
-      cpu: "100m"
+      cpu: "500m"
       memory: "1024M"
     limits:
       cpu: "1000m"
@@ -157,11 +157,11 @@ kafka:
     host: "kafka"
     port: "9092"
   limits:
-    memory: "512M"
-    cpu: "500m"
+    memory: "1024M"
+    cpu: "1000m"
   requests:
     memory: "512M"
-    cpu: "100m"
+    cpu: "500m"
   deployment:
     annotations:
       deployTime: "{{ .Values.deployTime }}"

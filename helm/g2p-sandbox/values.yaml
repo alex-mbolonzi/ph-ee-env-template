@@ -21,6 +21,8 @@ ph-ee-engine:
     LOGGING_PATTERN_CONSOLE: "%d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger.%M - %msg%n"
     tenants: "rhino,gorilla,lion"
     DFSPIDS: "gorilla,lion"
+    cloud.google.com/gke-nodepool: apigee-runtime
+    deployTime: "{{ .Values.deployTime }}"
 
   zeebe-operate-helm:
     enabled: true

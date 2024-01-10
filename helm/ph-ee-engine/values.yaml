@@ -109,6 +109,9 @@ camunda-platform:
         value: "4"
       - name: ZEEBE_GATEWAY_MONITORING_ENABLED
         value: "true"
+    resources:
+      requests:
+        cpu: 500m
 
   elasticsearch:
     enabled: false

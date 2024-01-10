@@ -20,8 +20,6 @@ global:
   LOGGING_PATTERN_CONSOLE: "%d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger.%M - %msg%n"
   tenants: ""
   DFSPIDS: ""
-  cloud.google.com/gke-nodepool: apigee-runtime
-  deployTime: "{{ .Values.deployTime }}"
 camunda-platform:
   connectors:
     enabled: false

@@ -1,9 +1,4 @@
 ph-ee-engine:
-  zeebe-cluster:
-    clusterSize: "1"
-    partitionCount: "1"
-    replicationFactor: "1"
-
   ingress:
     apiversion: "networking.k8s.io/v1"
 

@@ -9,7 +9,7 @@ dependencies:
     condition: "elasticsearch.enabled"
   - name: kibana
     repository: http://helm.elastic.co
-    version: 7.17.3
+    version: 7.16.3
     condition: "kibana.enabled"
   - name: mysql
     version: 9.4.5

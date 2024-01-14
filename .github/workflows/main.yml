@@ -3,7 +3,7 @@ name: Release Charts
 on:
   push:
     branches:
-      - main
+      - open-pay-ph-ee-template-dev
 
 jobs:
   release:

@@ -11,6 +11,7 @@ cp *.tgz index.yaml /usr/share/nginx/html/
 #rm ph-ee-engine*.tgz
 echo "deployed to local repo"
 
-scp index.yaml ph-ee-engine-1.0.0-SNAPSHOT.tgz jenkins.mifos.io:/srv/data/helm-charts/
+#scp index.yaml ph-ee-engine-1.0.0-SNAPSHOT.tgz jenkins.mifos.io:/srv/data/helm-charts/
+cp index.yaml *.tgz ../docs/
 echo "deployed to remote helm repo"
 

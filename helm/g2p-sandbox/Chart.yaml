@@ -7,8 +7,8 @@ appVersion: 1.3.1
 
 dependencies:
 - name: ph-ee-engine
-  repository: "file://../ph-ee-engine/ph-ee-engine"
-  #repository: https://fynarfin.io/images/ph-ee-engine-1.11.1-SNAPSHOT
+  #repository: "file://../ph-ee-engine/ph-ee-engine"
+  repository: https://fynarfin.io/images/ph-ee-engine-1.11.1-SNAPSHOT
   version: 1.11.1-SNAPSHOT
 
 - name: account_mapper

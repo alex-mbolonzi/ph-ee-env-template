@@ -8,5 +8,5 @@ helm/*.tgz
 .DS_Store
 .env
 !index.yaml
-helm/index.yaml
-*.tgz
+!helm/index.yaml
+!*.tgz

@@ -24,4 +24,4 @@ jobs:
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         with:
-          chart_path: "helm/ph-ee-engine"
+          charts_dir: "helm/ph-ee-engine"

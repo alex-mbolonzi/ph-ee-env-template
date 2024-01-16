@@ -1,8 +1,15 @@
 dependencies:
-  - name: camunda-platform
+  #- name: camunda-platform
+  #  repository: https://helm.camunda.io
+  #  version: 8.2.12
+  #  condition: "camunda-platform-helm.enabled"
+  - name: zeebe-cluster-helm
     repository: https://helm.camunda.io
-    version: 8.2.12
-    condition: "camunda-platform-helm.enabled"
+    version: 1.0.0
+  - name: zeebe-operate-helm
+    repository: https://helm.camunda.io
+    version: 1.2.0
+    condition: "zeebe-operate-helm.enabled"
   - name: elasticsearch
     repository: http://helm.elastic.co
     version: 7.17.3
@@ -96,16 +103,16 @@ dependencies:
     version: 1.0.0
     repository: "file://./kafka"
     condition: "kafka.enabled"
-  - name: connector_bulk_closedloop
-    version: 1.0.0
-    repository: "file://./connector-bulk-closedloop"
-    condition: "connector_bulk_closedloop.enabled"
-  - name: mockpayment
-    version: 1.0.0
-    repository: "file://./connector-mock-payment-schema"
-    condition: "mockpayment.enabled"
+  #- name: connector_bulk_closedloop
+  #  version: 1.0.0
+  #  repository: "file://./connector-bulk-closedloop"
+  #  condition: "connector_bulk_closedloop.enabled"
+  #- name: mockpayment
+  #  version: 1.0.0
+  #  repository: "file://./connector-mock-payment-schema"
+  #  condition: "mockpayment.enabled"
 
-  - name: vouchers
-    version: 1.0.0
-    repository: "file://./vouchers"
-    condition: "vouchers.enabled"
+  #- name: vouchers
+  #  version: 1.0.0
+  #  repository: "file://./vouchers"
+  #  condition: "vouchers.enabled"

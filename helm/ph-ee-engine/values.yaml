@@ -348,8 +348,8 @@ operationsmysql:
     setup.sql: |-
       CREATE DATABASE IF NOT EXISTS phdefault;
       CREATE DATABASE IF NOT EXISTS messagegateway;
-      CREATE DATABASE `voucher_management`
-      GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';
+      CREATE DATABASE `voucher_management`;
+      GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
       GRANT ALL PRIVILEGES ON messagegateway.* TO 'mifos';
       GRANT ALL PRIVILEGES ON phdefault.* TO 'mifos';
       GRANT ALL PRIVILEGES ON `voucher_management`.* TO 'mifos';

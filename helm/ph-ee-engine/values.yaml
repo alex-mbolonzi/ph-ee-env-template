@@ -60,8 +60,12 @@ zeebe-cluster-helm:
   pvcAccessModes: [ "ReadWriteOnce" ]
 
   resources:
+    limits:
+      memory: "1024M"
+      cpu: "1000m"
     requests:
-      cpu: 100m
+      memory: "512M"
+      cpu: "500m"
 
   env:
 #    - name: ZEEBE_BROKER_BACKPRESSURE_ENABLED

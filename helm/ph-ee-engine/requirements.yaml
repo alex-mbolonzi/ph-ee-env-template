@@ -5,7 +5,7 @@ dependencies:
   #  condition: "camunda-platform-helm.enabled"
   - name: zeebe-cluster-helm
     repository: https://helm.camunda.io
-    version: 1.0.0
+    version: 1.2.0
   - name: zeebe-operate-helm
     repository: https://helm.camunda.io
     version: 1.2.0
